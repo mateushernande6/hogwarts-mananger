@@ -11,7 +11,7 @@ const Students = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     axios
-      .get("http://hp-api.herokuapp.com/api/characters/students")
+      .get("https://hp-api.herokuapp.com/api/characters/students")
       .then((res) => setStudentList(res.data));
   }, []);
 
@@ -25,12 +25,12 @@ const Students = () => {
         <DivLine>Alunos</DivLine>
         <ContLine>
           <>
-            <div className="divWidth">
+            <div className="divWidth subTitle">
               <strong>
                 <p>Nome</p>
               </strong>
             </div>
-            <div className="divWidth">
+            <div className="divWidth subTitle">
               <strong>
                 <p>Casa</p>
               </strong>
